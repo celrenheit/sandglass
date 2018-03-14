@@ -1,0 +1,5 @@
+name: nodeTest
+data: /tmp/nodeTest
+offset_replication_factor: 1
+bootstrap_raft: true
+verbose: false

@@ -51,3 +51,7 @@ Temporary Items
 # Custom
 
 !Dockerfile.test
+sandctrl
+sandglass
+sandctl
+raft.db

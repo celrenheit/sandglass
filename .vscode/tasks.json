@@ -1,0 +1,12 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Execute",
+            "type": "shell",
+            "command": "go build -a -tags netgo -o ${workspaceRoot}/sandglass ${workspaceRoot}/cmd/sandglass/main.go && ${workspaceRoot}/sandglass --config ${workspaceRoot}/demo/nodeTest.yaml"
+        }
+    ]
+}
