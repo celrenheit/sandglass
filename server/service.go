@@ -33,7 +33,7 @@ func (s *service) CreateTopic(ctx context.Context, params *sgproto.TopicConfig) 
 func (s *service) GetTopic(ctx context.Context, req *sgproto.GetTopicParams) (*sgproto.GetTopicReply, error) {
 	t := s.broker.GetTopic(req.Name)
 	if t == nil {
-		return nil, status.Errorf(codes.NotFound, "topic '%s' not found")
+		return nil, status.Errorf(codes.NotFound, "topic '%s' not found", req.Name)
 	}
 	partitions := t.ListPartitions()
 	res := make([]string, len(partitions))
