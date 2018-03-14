@@ -1,9 +1,5 @@
-name: node1
-bind_addr: 127.0.0.1
-advertise_addr: 127.0.0.1
-data: /tmp/node1
-gossip_port: 9900
-http_port: 2108
-grpc_port: 7170
-raft_port: 9190
+name: nodeTest
+data: /tmp/nodeTest
+offset_replication_factor: 1
 bootstrap_raft: true
+verbose: false

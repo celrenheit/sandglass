@@ -11,7 +11,7 @@
 			"host": "127.0.0.1",
 			"program": "${workspaceRoot}/cmd/sandglass/main.go",
 			"env": {},
-			"args": ["--config", "${workspaceRoot}/demo/nodeTest.yaml", "--offset_replication_factor", "1"],
+			"args": ["--config", "${workspaceRoot}/demo/nodeTest.yaml"],
 			"showLog": true
 		}
 	]
